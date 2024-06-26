@@ -255,5 +255,5 @@ print(f'Accuracy: {accuracy}')
 model.save('sentiment_model.h5')  # Guardar como .h5 para compatibilidad
 
 # Guardar el tokenizer usando pickle
-with open('tokenizer.pkl', 'wb') as file:
+with open('sentiment_model.pkl', 'wb') as file:
     pickle.dump(tokenizer, file)
