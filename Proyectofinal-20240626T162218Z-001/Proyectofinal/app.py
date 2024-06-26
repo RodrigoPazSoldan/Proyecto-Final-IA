@@ -27,7 +27,7 @@ db.create_all()
 
 # Cargar el modelo y el tokenizer
 model = load_model('sentiment_model.h5')
-with open('tokenizer.pkl', 'rb') as file:
+with open('sentiment_model.pkl', 'rb') as file:
     tokenizer = pickle.load(file)
 
 @app.route('/')
