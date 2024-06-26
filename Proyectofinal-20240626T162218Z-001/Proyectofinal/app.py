@@ -11,7 +11,7 @@ import datetime
 app = Flask(__name__)
 
 # Configuración de la base de datos
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///reviews.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///reviews_history.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
