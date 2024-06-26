@@ -1,17 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análisis de Sentimientos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/static/style.css">
-    <title>Sentiment Analysis</title>
 </head>
 <body>
-    <h1>Sentiment Analysis of Movie Reviews</h1>
-    <form action="/predict" method="post">
-        <textarea name="review" rows="4" cols="50" required></textarea>
-        <br>
-        <button type="submit">Analyze</button>
-    </form>
+    <div class="container mt-5">
+        <h1>Análisis de Sentimientos de Reseñas</h1>
+        <p class="lead">Introduce una reseña en el área de texto y presiona "Analizar" para determinar el sentimiento.</p>
+        <form action="/predict" method="post">
+            <div class="mb-3">
+                <label for="review" class="form-label">Reseña:</label>
+                <textarea class="form-control" id="review" name="review" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Analizar</button>
+        </form>
+        <hr>
+        <a href="/history" class="btn btn-info">Ver Historial de Análisis</a>
+    </div>
 </body>
 </html>
+
